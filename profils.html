@@ -6,10 +6,11 @@
     <link href="css/bootstrap.min.css" rel = "stylesheet">
     <link rel="stylesheet" type="text/css" href="design.css"/>
     <link rel="icon" type="image/png" href="img/icon.jpg">
+	<meta charset="UTF-8">
     </head> 
 <body>
     <nav>
-   <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             
             <a href="index.html" class="navbar-brand">Martial Arts</a>  
@@ -20,11 +21,11 @@
             </button>
                 <div class="collapse navbar-collapse navHeaderCollapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">Sakums</a></li>
+                            <li><a href="index.html">Sākums</a></li>
                             <li><a href="profils.html" class="hiddden">Profils</a></li>
                             <li><a href="galerija.html">Galerija</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Socialie Tikli <b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sociālie Tīkli <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="https://www.youtube.com/channel/UClT8PimU0wdzrelFZ9jiyxg" target="_blank">Youtube</a></li>
                                     <li><a href="http://www.facebook.com/ervinsline"  target="_blank">Facebook</a></li>
@@ -35,14 +36,16 @@
                             </li>
                             <li><a href="kontakti.html">Kontakti</a></li>
                             <li><a href="cv.html">CV</a></li>
-                            <li><a href="#register" data-toggle="modal">Registracija</a></li>
+                            <li><a href="#register" data-toggle="modal">Reģistrācija</a></li>
                             <li><a href="#login" data-toggle="modal">Ieiet</a></li>
                         </ul>
                 </div>
+            
         </div>
     </div>
     </nav>
-    <section>
+    
+ <section>
     <div class="container">
     <div class="row profile">
 		<div class="col-md-3 col-sm-3">
@@ -107,7 +110,13 @@
 </div>
     </section>
     <footer>
-    <div class="navbar navbar-default navbar-fixed-bottom" >
+    
+    
+    
+    
+    
+   <footer>
+   <div class="navbar navbar-default navbar-fixed-bottom" >
     
        <div class="container">
        
@@ -116,6 +125,133 @@
        </div> 
     
     </div>
-    </footer>
-    </body>
+        </footer>
+    
+    <div class="modal fade" id="register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Reģistrācija</h4>
+                    </div>
+                    <div class="modal-body">
+                   
+                        <div class="form-group">
+                            
+                            <label for="contact-name" class="col-lg-2 control-label">
+                                Vārds: </label> 
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Pilnais vārds">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-name" class="col-lg-2 control-label">
+                                Uzvārds: </label> 
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Uzvārds">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-email" class="col-lg-2 control-label">
+                                E-pasts: </label> 
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                                </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-password" class="col-lg-2 control-label">
+                                Parole: </label> 
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="contact-password" placeholder="Parole">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-password" class="col-lg-2 control-label">
+                                Apstiprināt paroli: </label> 
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="contact-password" placeholder="Parole">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="modal-footer">
+                        <a class="btn btn-default" href="index.html">Aizvērt
+                        </a>
+                       <button class="btn btn-primary" type="submit">Apstiprināt</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="modal fade" id="login" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Ielogoties</h4>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-email" class="col-lg-2 control-label">
+                                E-pasts: </label> 
+                            <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Tavs e-pasts">
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            
+                            <label for="contact-password" class="col-lg-2 control-label">
+                                Parole: </label>
+                            <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="contact-password" placeholder="Parole">
+                            </div>
+                            </div>
+                            
+                        </div>
+                        
+                
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-default" href="index.html">Aizvērt
+                        </a>
+                       <button class="btn btn-primary" type="submit">Apstiprināt</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
